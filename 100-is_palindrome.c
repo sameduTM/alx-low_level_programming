@@ -24,6 +24,6 @@ int is_palindrome(char *s)
 	if (r == q)
 	{
 		return (1);
-	}
-	return (0);
+	} else
+		return (0);
 }
