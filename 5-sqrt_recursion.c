@@ -2,7 +2,7 @@
 
 int _sqrt(int n, int i);
 /**
-  * _sqrt_recursion - returns natural sqrt of number
+  * _sqrt_recursion - return natural sqrt of number
   * @n: number to check
   *
   * Return: square root of number, -1 if sqrt DNE
