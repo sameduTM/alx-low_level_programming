@@ -1,4 +1,6 @@
 #include "main.h"
+
+int _sqrt(int n, int i);
 /**
   * _sqrt_recursion - return natural sqrt of number
   * @n: number to check
@@ -7,5 +9,28 @@
   */
 int _sqrt_recursion(int n)
 {
-	if (n >= 1)
+	return (_sqrt(n, 1));
+}
+
+/**
+  * _sqrt - calc natural square root
+  * @n: check if a perfect square
+  * @i: square root to check
+  *
+  * Return: natural square root
+  */
+int _sqrt(int n, int i)
+{
+	int sqrt = i * i;
+
+	if (sqrt > n)
 	{
+		return (-1);
+	}
+	if (sqrt == n)
+	{
+		return (i);
+	}
+
+	return (_sqrt(n, i + 1));
+}
