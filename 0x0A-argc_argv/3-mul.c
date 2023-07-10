@@ -9,15 +9,15 @@
   */
 int main(int argc, char **argv)
 {
-	int sum = 0;
+	int mul = 0;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 	} else
 	{
-		sum = atoi(argv[1]) + atoi(argv[2]);
-		printf("%d\n", sum);
+		mul = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", mul);
 	}
 
 	return (0);
