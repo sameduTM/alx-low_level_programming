@@ -22,12 +22,18 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	if (str == NULL)
+	{
+		return (NULL);
+	} else
+	{
 	while (j < i)
 	{
 		s[j] = *str++;
 		j++;
 	}
 	s[j] = '\0';
+	}
 
 	return (s);
 }
