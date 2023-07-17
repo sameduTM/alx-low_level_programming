@@ -5,6 +5,7 @@
   * print_dog - prints struct dog
   * @d: pointer to all variables
   *
+  * Return: Nothing
   */
 void print_dog(struct dog *d)
 {
