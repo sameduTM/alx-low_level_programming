@@ -45,12 +45,9 @@ char *allocate_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		j++;
 	}
-	if (n >= j)
-	{
-		size = i + j + n;
-	} else
-		size = i + n;
-	s3 = malloc(sizeof(char) * size);
+
+	size = i + n;
+	s3 = malloc((sizeof(char) * size) + 1);
 
 	if (s3 == NULL)
 	{
