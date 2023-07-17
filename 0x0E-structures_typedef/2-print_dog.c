@@ -2,8 +2,8 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
-  *
-  *
+  * print_dog - prints struct dog
+  * @d: pointer to all variables
   *
   */
 void print_dog(struct dog *d)
