@@ -1,4 +1,6 @@
+#ifndef FILE
 #include <stdio.h>
+#endif
 /**
   * main - checks the code
   *
