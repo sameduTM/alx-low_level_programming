@@ -26,12 +26,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (str == NULL)
 		{
-			printf("(nil)\n");
+			printf("(nil)");
 			if (i != n - 1)
 			{
 				printf("%s", separator);
-				continue;
 			}
+			continue;
 		}
 		printf("%s", str);
 		if (i != n - 1)
