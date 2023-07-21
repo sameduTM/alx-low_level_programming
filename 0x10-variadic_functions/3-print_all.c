@@ -11,16 +11,12 @@
   */
 void print_all(const char * const format, ...)
 {
-	int i, count, j;
+	int i, count = strlen(format), j = 0;
 	va_list ap;
 	float f;
 	char *s, c;
 
 	va_start(ap, format);
-
-	j = 0;
-	count = strlen(format);
-
 	while (format[j])
 	{
 		switch (format[j])
