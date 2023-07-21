@@ -15,9 +15,10 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	float f;
 	char *s, c;
+	const char *ptr = format;
 
 	va_start(ap, format);
-	while (format != NULL && format[j])
+	while (format != NULL && *ptr)
 	{
 		switch (format[j])
 		{
@@ -47,6 +48,7 @@ void print_all(const char * const format, ...)
 			format[j] == 's' || format[j] == 'i' || format[j] == 'f'))
 			printf(", ");
 		j++;
+		ptr++;
 	}
 	va_end(ap);
 	printf("\n");
