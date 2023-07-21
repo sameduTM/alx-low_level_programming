@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 	j = 0;
 	count = strlen(format);
 
-	while (format && format[j])
+	while (format[j])
 	{
 		switch (format[j])
 		{
