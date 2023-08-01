@@ -7,7 +7,7 @@
  *
  * Return: Address of the node where loop starts/returns, NULL if no loop
  */
-listint_t *find_listint_loop(listint_t *head)
+listint_t *finds_listint_loop(listint_t *head)
 {
 	listint_t *slow, *fast;
 
@@ -41,7 +41,7 @@ size_t free_listint_safe(listint_t **head)
 	if (head == NULL || *head == NULL)
 		return (0);
 
-	loop_start = find_listint_loop(*head);
+	loop_start = finds_listint_loop(*head);
 	for (node_count = 0; (*head != loop_start || is_loop) && *head != NULL; *head = next)
 	{
 		node_count++;
