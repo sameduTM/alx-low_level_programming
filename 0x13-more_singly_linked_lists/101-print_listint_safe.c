@@ -7,7 +7,7 @@
  *
  * Return: address of node where loop starts/returns, NULL if no loop
  */
-listint_t *find_listint_loop(listint_t *head)
+listint_t *findss_listint_loop(listint_t *head)
 {
 	listint_t *slow, *fast;
 
@@ -39,7 +39,7 @@ size_t print_listint_safe(const listint_t *head)
 	int loop;
 	listint_t *loop_node;
 
-	loop_node = find_listint_loop((listint_t *) head);
+	loop_node = findss_listint_loop((listint_t *) head);
 
 	for (count = 0, loop = 1; (head != loop_node || loop)
 			&& head != NULL; count++)
