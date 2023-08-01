@@ -1,12 +1,6 @@
 #include "lists.h"
 
 /**
-  * print_listint_safe - prints linked list
-  * @head: pointer to head of list
-  *
-  * Return: number of nodes in list
-  */
-/**
  * find_listint_loop - finds a loop in a linked list
  *
  * @head: linked list to search
@@ -47,7 +41,8 @@ size_t print_listint_safe(const listint_t *head)
 
 	loop_node = find_listint_loop((listint_t *) head);
 
-	for (count = 0, loop = 1; (head != loop_node || loop) && head != NULL; count++)
+	for (count = 0, loop = 1; (head != loop_node || loop)
+			&& head != NULL; count++)
 	{
 		printf("[%p] %d\n", (void *) head, head->n);
 		if (head == loop_node)

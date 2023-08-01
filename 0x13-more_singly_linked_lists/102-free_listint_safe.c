@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * find_listint_loop - finds a loop in a linked list
+ * finds_listint_loop - finds a loop in a linked list
  *
  * @head: linked list to search
  *
@@ -42,7 +42,8 @@ size_t free_listint_safe(listint_t **head)
 		return (0);
 
 	loop_start = finds_listint_loop(*head);
-	for (node_count = 0; (*head != loop_start || is_loop) && *head != NULL; *head = next)
+	for (node_count = 0; (*head != loop_start || is_loop)
+			&& *head != NULL; *head = next)
 	{
 		node_count++;
 		next = (*head)->next;
