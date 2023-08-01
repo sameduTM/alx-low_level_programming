@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * find_listint_loop - finds a loop in a linked list
+ * findss_listint_loop - finds a loop in a linked list
  *
  * @head: linked list to search
  *
