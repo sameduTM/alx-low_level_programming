@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <ctype.h>
+
 /**
   * main - checks the code
   * @argc: counts no. of argument
@@ -9,35 +10,29 @@
   *
   * Return: Always 0
   */
+
 int main(int argc, char **argv)
 {
-	int i;
-	int num;
-	bool error = false;
-	int sum = 0;
-
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (0);
-	}
+	int i, j, sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		num = atoi(argv[i]);
-
-		if (num <= 0 || !(isdigit(num)))
+		if (!(argv[i][0] >= '0' && argv[i][0] <= '9')
+		    && argv[i][0] != '-')
 		{
-			error = true;
-			break;
+			printf("Error\n");
+			return (1);
 		}
-		sum += num;
+		for (j = 1; argv[i][j] != 0; j++)
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 	}
-	if (error)
-	{
-		printf("Error\n");
-		return (1);
-	}
+
+	for (i = 1; i < argc; i++)
+		sum += atoi(argv[i]);
 	printf("%d\n", sum);
 
 	return (0);
