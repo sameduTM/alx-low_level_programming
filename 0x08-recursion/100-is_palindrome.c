@@ -13,10 +13,9 @@ int _strlen_recursion(char *s)
 }
 
 /**
- * palindrome_finder - finds palindromes
- *
+ * find_palindrome - finds palindromes
  * @s: string to find palindrome of
- * @l: last offset of string
+ * @j: last offset of string
  *
  * Return: 1 if palindrome, 0 otherwise
  */
@@ -32,7 +31,6 @@ int find_palindrome(char *s, int j)
 
 /**
  * is_palindrome - returns if string is palindrome or not
- *
  * @s: string to test
  *
  * Return: 1 if palindrome, 0 otherwise
