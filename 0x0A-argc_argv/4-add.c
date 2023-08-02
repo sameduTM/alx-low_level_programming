@@ -25,6 +25,12 @@ int main(int argc, char **argv)
 	{
 		num = atoi(argv[i]);
 
+		if (!(num >= 0 && num <= 9))
+		{
+			error = true;
+			break;
+		}
+
 		if (num <= 0)
 		{
 			error = true;
