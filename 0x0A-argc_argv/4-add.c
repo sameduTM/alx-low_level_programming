@@ -5,8 +5,8 @@
 
 /**
   * main - checks the code
-  * @argc: counts no. of argument
-  * @argv: points to the number of arrays of strings
+  * @argc: checks for no. of argument
+  * @argv: pointer to the number of arrays of strings
   *
   * Return: Always 0
   */
