@@ -108,5 +108,9 @@ int main(int ac, char *av[])
 	err += cl_errchk(file_to);
 	if (err != 0)
 		return (100);
+
+	close(file_from);
+	close(file_to);
+
 	return (0);
 }
