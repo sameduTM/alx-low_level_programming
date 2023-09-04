@@ -22,9 +22,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 		if (feof(fp))
 			break;
-		putchar(c);
+		_putchar(c);
 		count++;
 	}
+	fclose(fp);
 
 	return (count);
 }
