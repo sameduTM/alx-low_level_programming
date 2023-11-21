@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+ * main - checks main code
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int i = 1;
@@ -20,4 +24,6 @@ int main(void)
 		i++;
 	}
 	printf("\n");
+
+	return (0);
 }
