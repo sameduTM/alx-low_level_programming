@@ -7,29 +7,18 @@
  */
 int main(void)
 {
-	int num = 1231952, i = 2, j;
+	long int num = 612852475143;
 
-	int mid = num / 2 - 1;
+	long int fc = 2;
 
-	while (mid >= 2)
+	while (num > 1)
 	{
-		if (num % mid == 0)
-		{
-			j = mid / 2;
-			while (j > 2)
-			{
-				if (mid % j == 0)
-				{
-					break;
-				}
-				else
-				{
-					printf("%d\n", mid);
-					return (0);
-				}
-				j--;
-			}
-		}
-		mid--;
+		if (num % fc == 0)
+			num /= fc;
+		else
+			fc++;
 	}
+	printf("%ld\n", fc);
+
+	return (0);
 }
