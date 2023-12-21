@@ -4,7 +4,7 @@
 #	action
 
 CC=gcc
-SRC=main.c school.c
+SRC=$(wildcard *.c)
 OBJ=$(wildcard *.o)
 NAME=school
 
@@ -13,6 +13,5 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-$(OBJ): $(SRC)
-	$(CC) -c $(SRC)
-
+%.o: %.c
+	$(CC) -c -o $@ $<
