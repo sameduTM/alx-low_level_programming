@@ -12,7 +12,7 @@ RM=rm -f
 all: $(NAME)
 
 clean:
-	$(RM) $(NAME) *~
+	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
@@ -20,7 +20,7 @@ oclean:
 fclean: clean oclean
 	$(RM) $(NAME)
 
-re: clean all
+re: oclean all
 
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
