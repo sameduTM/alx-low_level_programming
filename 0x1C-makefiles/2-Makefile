@@ -4,7 +4,7 @@
 #	action
 
 CC=gcc
-SRC=$(wildcard *.c)
+SRC=main.c school.c
 OBJ=$(wildcard *.o)
 NAME=school
 
