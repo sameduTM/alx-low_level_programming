@@ -1,8 +1,5 @@
 # -*- MakeFile -*-
 
-#target: dependencies
-#	action
-
 all: school
 
 school: main.o school.o
