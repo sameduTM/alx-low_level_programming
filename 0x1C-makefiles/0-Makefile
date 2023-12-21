@@ -13,3 +13,4 @@ school.o: school.c
 
 main.o: main.c
 	gcc -c main.c
+
