@@ -5,7 +5,7 @@
 
 all: school
 
-chool: main.o school.o
+school: main.o school.o
 	gcc -o school main.o school.o
 
 school.o: school.c
