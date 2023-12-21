@@ -1,0 +1,15 @@
+# -*- MakeFile -*-
+
+#target: dependencies
+#	action
+
+all: school
+
+chool: main.o school.o
+	gcc -o school main.o school.o
+
+school.o: school.c
+	gcc -c school.c
+
+main.o: main.c
+	gcc -c main.c
