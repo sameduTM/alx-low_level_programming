@@ -18,5 +18,7 @@ int main(void)
 	printf("Found %d at index: %d\n\n", 62, exponential_search(array, size, 62));
 	printf("Found %d at index: %d\n\n", 3, exponential_search(array, size, 3));
 	printf("Found %d at index: %d\n", 999, exponential_search(array, size, 999));
+	printf("Found at index: %d\n", exponential_search(NULL, 0, 0));
+	printf("Found at index: %d\n", exponential_search(array, 16, 123456789));
 	return (EXIT_SUCCESS);
 }
